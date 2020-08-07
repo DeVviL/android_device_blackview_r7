@@ -12,21 +12,21 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-$(call inherit-product, device/ulefone/k11ta_a/full_k11ta_a.mk)
+$(call inherit-product, device/blackview/r7/full_r7.mk)
 
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 
-PRODUCT_NAME := lineage_k11ta_a
-BOARD_VENDOR := ulefone
-PRODUCT_DEVICE := k11ta_a
+PRODUCT_NAME := lineage_r7
+BOARD_VENDOR := blackview
+PRODUCT_DEVICE := r7
 
-PRODUCT_GMS_CLIENTID_BASE := android-ulefone
+PRODUCT_GMS_CLIENTID_BASE := android-blackview
 
-PRODUCT_MANUFACTURER := Ulefone
-PRODUCT_MODEL := Ulefone Future
+PRODUCT_MANUFACTURER := blackview
+PRODUCT_MODEL := blackview r7
 
-PRODUCT_BRAND := Ulefone
-TARGET_VENDOR := ulefone
-TARGET_VENDOR_PRODUCT_NAME := Future
-TARGET_VENDOR_DEVICE_NAME := k11ta_a
+PRODUCT_BRAND := blackview
+TARGET_VENDOR := blackview
+TARGET_VENDOR_PRODUCT_NAME := r7
+TARGET_VENDOR_DEVICE_NAME := r7

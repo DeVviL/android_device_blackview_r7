@@ -1,7 +1,7 @@
 #!/bin/bash
 
-DEVICE=k11ta_a
-VENDOR=ulefone
+DEVICE=r7
+VENDOR=blackview
 
 OUTDIR=vendor/$VENDOR/$DEVICE
 MAKEFILE=../../../$OUTDIR/$DEVICE-vendor-blobs.mk
@@ -59,8 +59,8 @@ endif
 ifeq (\$(WITH_GMS),true)
 
 PRODUCT_COPY_FILES += \\
-    vendor/ulefone/k11ta_a/proprietary/etc/permissions/com.google.widevine.software.drm.xml:system/etc/permissions/com.google.widevine.software.drm.xml \\
-    vendor/ulefone/k11ta_a/proprietary/framework/com.google.widevine.software.drm.jar:system/framework/com.google.widevine.software.drm.jar
+    vendor/blackview/r7/proprietary/etc/permissions/com.google.widevine.software.drm.xml:system/etc/permissions/com.google.widevine.software.drm.xml \\
+    vendor/blackview/r7/proprietary/framework/com.google.widevine.software.drm.jar:system/framework/com.google.widevine.software.drm.jar
 
 endif # WITH_GMS
 
@@ -153,7 +153,7 @@ EOF
 
 LOCAL_PATH := \$(call my-dir)
 
-ifeq (\$(TARGET_DEVICE),k11ta_a)
+ifeq (\$(TARGET_DEVICE),r7)
 ifeq (\$(MTKPATH),)
 
 # Proprietary Modules go here

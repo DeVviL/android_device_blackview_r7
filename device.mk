@@ -13,10 +13,10 @@
 # limitations under the License.
 #
 
-VENDOR_BLOBS ?= vendor/ulefone/k11ta_a/k11ta_a-vendor.mk
+VENDOR_BLOBS ?= vendor/blackview/r7/r7-vendor.mk
 $(call inherit-product-if-exists, $(VENDOR_BLOBS))
 
-MTK_PROJECT_CONFIG ?= device/ulefone/k11ta_a/ProjectConfig.mk
+MTK_PROJECT_CONFIG ?= device/blackview/r7/ProjectConfig.mk
 include $(MTK_PROJECT_CONFIG)
 
 # Charger and USB

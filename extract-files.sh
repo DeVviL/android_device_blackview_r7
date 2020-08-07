@@ -1,7 +1,7 @@
 #!/bin/bash
 
-export DEVICE=k11ta_a
-export VENDOR=ulefone
+export DEVICE=r7
+export VENDOR=blackview
 
 if [ $# -eq 0 ]; then
   SRC=adb

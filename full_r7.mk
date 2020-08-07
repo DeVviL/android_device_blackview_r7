@@ -15,11 +15,11 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit from k11ta_a
-$(call inherit-product, device/ulefone/k11ta_a/device.mk)
+# Inherit from r7
+$(call inherit-product, device/blackview/r7/device.mk)
 
-PRODUCT_DEVICE := k11ta_a
-PRODUCT_NAME := full_k11ta_a
-PRODUCT_BRAND := ulefone
-PRODUCT_MODEL := k11ta_a
-PRODUCT_MANUFACTURER := ulefone
+PRODUCT_DEVICE := r7
+PRODUCT_NAME := full_r7
+PRODUCT_BRAND := blackview
+PRODUCT_MODEL := r7
+PRODUCT_MANUFACTURER := blackview
