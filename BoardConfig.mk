@@ -17,6 +17,9 @@ TARGET_BOARD_PLATFORM := mt6755
 
 DEVICE_PATH := device/blackview/r7
 
+# Assert
+TARGET_OTA_ASSERT_DEVICE := r7,magc6755_66c_m
+
 MTK_PROJECT_CONFIG ?= $(DEVICE_PATH)/ProjectConfig.mk
 include $(MTK_PROJECT_CONFIG)
 include device/cyanogen/mt6755-common/BoardConfigCommon.mk
