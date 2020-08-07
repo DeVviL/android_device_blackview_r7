@@ -102,3 +102,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Inherit the rest from mt6755-common
 $(call inherit-product, device/cyanogen/mt6755-common/mt6755.mk)
+
+#Copy Prebuilt Kernel
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/kernel:kernel

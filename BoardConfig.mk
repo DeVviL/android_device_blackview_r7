@@ -36,13 +36,16 @@ BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2 enforcing=0 androidboot.selinux=p
 BOARD_MKBOOTIMG_ARGS := --board K11TA-A.A.vR14. --ramdisk_offset 0x04f88000 --second_offset 0x00e88000 --tags_offset 0x03f88000
 
 # Kernel properties
-TARGET_KERNEL_ARCH := arm64
-TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
+#TARGET_KERNEL_ARCH := arm64
+#TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
 
-TARGET_KERNEL_SOURCE := kernel/blackview/r7
-TARGET_KERNEL_CONFIG := lineageos_r7_defconfig
+#TARGET_KERNEL_SOURCE := kernel/blackview/r7
+#TARGET_KERNEL_CONFIG := lineageos_r7_defconfig
 
 TARGET_BOOTLOADER_BOARD_NAME := r7
+
+#Prebuilt Kernel
+TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/kernel
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
