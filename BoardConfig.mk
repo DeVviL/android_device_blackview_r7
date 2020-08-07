@@ -42,10 +42,13 @@ BOARD_MKBOOTIMG_ARGS := --board K11TA-A.A.vR14. --ramdisk_offset 0x04f88000 --se
 #TARGET_KERNEL_SOURCE := kernel/blackview/r7
 #TARGET_KERNEL_CONFIG := lineageos_r7_defconfig
 
-TARGET_BOOTLOADER_BOARD_NAME := r7
+#TARGET_BOOTLOADER_BOARD_NAME := r7
 
 #Prebuilt Kernel
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/kernel
+
+# Hack for build
+$(shell mkdir -p $(OUT)/obj/KERNEL_OBJ/usr)
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
