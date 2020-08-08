@@ -6,3 +6,6 @@ ro.sf.lcd_density=480
 
 # Tethering
 wifi.tethering.interface=wlan0
+
+# disable NAV bar (soft keys)
+qemu.hw.mainkeys=1
