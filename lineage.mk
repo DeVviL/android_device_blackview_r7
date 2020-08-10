@@ -30,3 +30,8 @@ PRODUCT_BRAND := blackview
 TARGET_VENDOR := blackview
 TARGET_VENDOR_PRODUCT_NAME := r7
 TARGET_VENDOR_DEVICE_NAME := r7
+
+# Set build fingerprint / ID / Product Name ect.
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRIVATE_BUILD_DESC="full_magc6755_66c_m-user 6.0 MRA58K 1476273466 test-keys" \
+    BUILD_FINGERPRINT="R7/full_magc6755_66c_m/magc6755_66c_m:6.0/MRA58K/1476273466:user/test-keys"
